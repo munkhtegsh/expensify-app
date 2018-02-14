@@ -64,6 +64,10 @@ export default class ExpenseForm extends React.Component {
         }
     };
 
+    handleRemove = () => {
+        this.props.onRemove();
+    }
+
     render() {
         return (
             <div>
@@ -104,8 +108,8 @@ export default class ExpenseForm extends React.Component {
                         placeholder="Add a not for your expense (optional)">
                     </textarea>
                     <button>Add Expense</button>
-                    
                 </form>
+                <button onClick={this.handleRemove}> Remove Button </button>
             </div>
         )
     }
