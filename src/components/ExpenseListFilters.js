@@ -6,7 +6,7 @@ const ExpenseListFilters = (props) => (
     <div>
         <input type="text" 
         value={props.filters.text} 
-        onChange={(e) => props.dispatch(setTextFilter(e.target.value))}/>
+        onChange={(e) => props.dispatch(setTextFilter(e.target.value))}/> {/*need to change the redux store*/}
         <select value={props.filters.sortBy}  //controlled component (controlled by js)
             onChange={(e) => {
                 if (e.target.value === 'date') {

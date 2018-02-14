@@ -18,6 +18,7 @@ store.subscribe(() => {
     console.log(visible);
 });
 
+
 //addExpense -> WaterBill
 store.dispatch(addExpense({description: 'Water bill', note: '', amount: 0, createdAt: 0}));
 //addExpense -> Gas bill
@@ -25,7 +26,7 @@ store.dispatch(addExpense({description: 'Gas Bill', createdAt: 1000}));
 store.dispatch(addExpense({description: 'Rent', amount: 109500}));
 
 //setTextFilter -> bill -> water (1 item)
-store.dispatch(setTextFilter(''));
+// store.dispatch(setTextFilter('bill'.toLowerCase()));
 
 // setTimeout(() => {
 //     store.dispatch(setTextFilter('bill'))

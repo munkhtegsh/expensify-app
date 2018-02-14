@@ -7,7 +7,7 @@ import selectExpenses from '../selector/expenses';
 const ExpenseList = ({expenses}) => (
     <div>
         <h3> Expense List </h3>
-        {expenses.length}
+        {/*expenses.length*/}
         {
             expenses.map((expense, i) => {
                 return <ExpenseListItem key={expense.id} {...expense} /> //Awesome useful descructuring in map

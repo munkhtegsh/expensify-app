@@ -13,6 +13,8 @@ const expenseReducer = ( state = expensesReducserDefaultState, action) => {
             return state.map(expense => {
                 if (expense.id === action.id) {
                     return {...expense, ...action.updates}
+                } else {
+                    return expense
                 }
             });
         default:

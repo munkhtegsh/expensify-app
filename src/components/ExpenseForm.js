@@ -11,9 +11,8 @@ import 'react-dates/lib/css/_datepicker.css'; //css for datepicker
 export default class ExpenseForm extends React.Component {
     constructor(props) {
         super(props);
-
         this.state = {
-            description: props.expense ? props.expense.description : '',
+            description: props.expense ? props.expense.description : '', //taking info from the parent if has info
             note: props.expense ? props.expense.note : '',
             amount: props.expense ? (props.expense.amount / 100).toString() : '',
             createdAt: props.expense ? moment(props.expense.createdAt) : moment(),
