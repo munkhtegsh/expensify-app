@@ -1,3 +1,4 @@
+
 //SET_TEXT_DATE
 export const setTextFilter = (text = '') => ({
     type: "SET_TEXT",
@@ -15,13 +16,13 @@ export const sortByAmount = () => ({
 });
 
 //SET_START_DATE
-export const startDate = (date) => ({
+export const setStartDate = (startDate) => ({
     type: 'START_DATE',
-    date
+    startDate
 });
 
 //SET_END_DATE
-export const endDate = (date) => ({
+export const setEndDate = (endDate) => ({
     type: 'END_DATE',
-    date
+    endDate
 })

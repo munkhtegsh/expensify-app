@@ -9,7 +9,6 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import AppRouter from './routers/AppRouter';
 import AddExpensePage from './components/AddExpensePage';
-import test from './components/AddHelp'
 
 const store = configureStore();
 store.subscribe(() => {
@@ -17,7 +16,6 @@ store.subscribe(() => {
     const visible = getVisibleExpenses(state.expenses, state.filters);
     console.log(visible);
 });
-
 
 //addExpense -> WaterBill
 store.dispatch(addExpense({description: 'Water bill', note: '', amount: 0, createdAt: 0}));
