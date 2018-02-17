@@ -11,7 +11,6 @@ class ExpenseListFilters extends React.Component {
     };
 
     onDateChange = ({startDate, endDate}) => {
-
         this.props.dispatch(setStartDate(startDate));
         this.props.dispatch(setEndDate(endDate));
     }

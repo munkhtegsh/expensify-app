@@ -7,7 +7,8 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webqpack-dev-server",
+    "test": "jest"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
@@ -39,6 +40,7 @@
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "install": "^0.10.4",
+    "jest": "^22.3.0",
     "npm": "^5.6.0"
   }
 }
